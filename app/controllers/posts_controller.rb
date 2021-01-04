@@ -11,8 +11,6 @@ class PostsController < ApplicationController
   end
 
   def checked
-    biding.pry
-
     post = Post.find(params[:id])
     if post.checked
       post.update(checked: false)
